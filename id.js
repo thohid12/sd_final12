@@ -120,7 +120,7 @@ function changeQuantity(key,quantity){
     }
     else{
         listCards[key].quantity=quantity;
-        listCards[key].price=quantity*products[key].price;
+        
     }
     reloadCard();
 }
