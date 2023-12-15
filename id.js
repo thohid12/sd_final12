@@ -88,11 +88,9 @@ function reloadCard(){
     listCard.innerHTML='';
     let count=0;
     let totalPrice=0;
-    let price;
     listCards.forEach((value,key)=>{
-        price=value.price*value.quantity;
         
-        totalPrice=totalPrice+price;
+        totalPrice=totalPrice+value.price;
         count=count+value.quantity;
 
         if(value !=null)
@@ -114,7 +112,7 @@ function reloadCard(){
     })
     total.innerHTML=totalPrice.toLocaleString();
     quantity.innerHTML=count;
-    totalPrice=0;
+
 }
 function changeQuantity(key,quantity){
     if(quantity==0){
