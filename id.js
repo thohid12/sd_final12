@@ -90,7 +90,7 @@ function reloadCard(){
     let totalPrice=0;
     let price;
     listCards.forEach((value,key)=>{
-        price=value.price;
+        price=value.price*value.quantity;
         
         totalPrice=totalPrice+price;
         count=count+value.quantity;
