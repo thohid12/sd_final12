@@ -114,6 +114,7 @@ function reloadCard(){
     })
     total.innerHTML=totalPrice.toLocaleString();
     quantity.innerHTML=count;
+    totalPrice=0;
 }
 function changeQuantity(key,quantity){
     if(quantity==0){
